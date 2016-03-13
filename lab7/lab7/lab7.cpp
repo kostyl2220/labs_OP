@@ -2,10 +2,11 @@
 //
 
 #include "stdafx.h"
-
+#include <string>
 void input(char*);
 void count(char*, char[]);
 void out(char[]);
+const int SYMB_COUNT = 256;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -17,14 +18,15 @@ int _tmain(int argc, _TCHAR* argv[])
 	return 0;
 }
 
-void input(char*){
+void input(char* str){
+	printf("Enter your string:\n");
+	scanf(str);
+}
+
+void count(char* str, char list[]){
 
 }
 
-void count(char*, char[]){
-
-}
-
-void out(char[]){
-
+void out(char list[]){
+	
 }
