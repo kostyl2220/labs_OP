@@ -24,7 +24,9 @@ void input(char* str){
 }
 
 void count(char* str, char list[]){
-
+	for (int i = 0; i < strlen(str); ++i) {
+		++list[(int)str[i]];
+	}
 }
 
 void out(char list[]){
