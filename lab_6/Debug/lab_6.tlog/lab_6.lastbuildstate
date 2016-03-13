@@ -1,2 +1,6 @@
 #TargetFrameworkVersion=v4.0:PlatformToolSet=v120:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit
+<<<<<<< HEAD
 Debug|Win32|C:\MyDocuments\Visual Studio 2013\Projects\lab_6\labs_OP\|
+=======
+Debug|Win32|c:\mydocuments\visual studio 2013\Projects\lab_6\|
+>>>>>>> 02ab6da10e374889f7ae0318895a0f54ecc070ba
