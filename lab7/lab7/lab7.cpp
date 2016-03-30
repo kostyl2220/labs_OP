@@ -5,12 +5,13 @@ using namespace std;
 void input(char*);
 void count(char*, char[]);
 void out(char[]);
-const int SYMB_COUNT = 256;
+const int SYMB_COUNT = 65536;
 const int STR_LENGTH = 100;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	char list[256] = {};
+	setlocale(LC_ALL, "Russian");
+	char list[SYMB_COUNT] = {};
 	char str[STR_LENGTH];
 	input(str);
 	count(str, list);
@@ -26,14 +27,14 @@ void input(char* str){
 
 void count(char* str, char list[]){
 	for (int i = 0; i < strlen(str); ++i) {
-		++list[(int)str[i]];
+		++list[(int)str[i]+ SYMB_COUNT / 2];
 	}
 }
 
 void out(char list[]){
 	for (int i = 0; i < SYMB_COUNT; ++i) {
 		if (list[i]) {
-			printf("Count of '%c' symbol is: %d\n", i, list[i]);
+			printf("Count of '%c' symbol is: %d\n", i - SYMB_COUNT / 2, list[i]);
 		}
 	}
 }
